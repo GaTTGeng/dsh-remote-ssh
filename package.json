@@ -1,7 +1,7 @@
 {
-  "name": "@local/dsh-remote-ssh",
-  "version": "0.8.0",
-  "private": true,
+  "name": "dsh-remote-ssh",
+  "version": "0.8.1",
+  "private": false,
   "type": "module",
   "description": "Remote SSH management plugin for DeepSeek Harness: multi-host groups, shared notes, credential-backed authentication, Sangfor bastion PTY transport, and agent tools.",
   "author": "GaTTGeng",

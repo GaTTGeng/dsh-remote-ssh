@@ -1,7 +1,16 @@
 # Changelog
 
 All notable changes to this project are documented here. This project uses
-semantic versioning for the local DSH bundle.
+semantic versioning for the plugin bundle.
+
+## 0.8.1
+
+- Renamed the bundle package from `@local/dsh-remote-ssh` to `dsh-remote-ssh`
+  so it can be installed directly from GitHub.
+- Published the GitHub installation target:
+  `github:GaTTGeng/dsh-remote-ssh#v0.8.1`.
+- Kept the plugin id, data path (`$DSH_HOME/remote-ssh`), and credential owner
+  unchanged, so existing profile data and credentials continue to work.
 
 ## 0.8.0
 

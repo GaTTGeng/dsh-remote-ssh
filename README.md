@@ -27,7 +27,13 @@ cd dsh-remote-ssh
 pnpm install
 ```
 
-这是 DSH 的本地 bundle（包名仍为 `@local/dsh-remote-ssh`），不是 npm 包。安装依赖后，在 DSH Web 的 Plugin Manager 中把该目录作为本地 bundle 安装（bundle patch 为 `cordis.patch.yml`），或按你的 DSH profile 约定链接到本地插件目录，然后刷新页面。
+这是 DSH 的 GitHub 在线 bundle（包名 `dsh-remote-ssh`）。在 DSH Web 的 Plugin Manager 中安装：
+
+```text
+github:GaTTGeng/dsh-remote-ssh#v0.8.1
+```
+
+也可以 clone 仓库、`pnpm install` 后，把本地目录作为 bundle 安装（bundle patch 为 `cordis.patch.yml`）。
 
 ## 使用
 
