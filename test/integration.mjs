@@ -665,7 +665,7 @@ async function runServiceTests() {
       authType: 'password',
       password: 'secret',
       elevation: 'sudo',
-      elevationPassword: 'supersecret',
+      elevationPassword: 'dummy-sudo-password',
     })
     assert.equal(withNodes.hosts.length, 2)
 
