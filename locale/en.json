@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Remote SSH",
+    "description": "Manage SSH connection groups with multiple hosts, shared notes, stored credentials, and agent-executable remote commands."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "@local/dsh-remote-ssh",
+  "version": "0.8.0",
+  "private": true,
+  "type": "module",
+  "description": "Remote SSH management plugin for DeepSeek Harness: multi-host groups, shared notes, credential-backed authentication, Sangfor bastion PTY transport, and agent tools.",
+  "author": "GaTTGeng",
+  "license": "MIT",
+  "homepage": "https://github.com/GaTTGeng/dsh-remote-ssh#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaTTGeng/dsh-remote-ssh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/GaTTGeng/dsh-remote-ssh/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "cordis",
+    "ssh",
+    "remote-management",
+    "sangfor",
+    "bastion",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@10.25.0",
+  "scripts": {
+    "test": "node test/integration.mjs"
+  },
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "api.js",
+    "service.js",
+    "ssh-client.js",
+    "store.js",
+    "sangfor.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "dependencies": {
+    "ssh2": "1.17.0"
+  }
+}
